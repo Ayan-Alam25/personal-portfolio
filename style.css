@@ -345,15 +345,16 @@ span.profession .change {
 
 /* Section 2 */
 .section-2{
-  margin-top: 120px;
-  
+  margin-top: 220px;
+  margin-bottom: 100px;
 }
+
 .skills {
-  width: 90rem;
+  width: 110rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 5rem;
+  gap: 8rem;
   isolation: isolate;
 }
 
@@ -424,6 +425,8 @@ span.profession .change {
 .skill:hover .projects.bottom {
   top: 100%;
 }
+
+
 
 .projects-heading {
   font-size: 2.3rem;
@@ -668,6 +671,11 @@ span.profession .change {
 
   .section-2 .heading {
     margin-bottom: 12rem;
+    margin-top: -22rem;
+  }
+
+  .section-3 .heading {
+    margin-top: -23rem;
   }
 
   .skills {
@@ -676,6 +684,7 @@ span.profession .change {
     grid-template-columns: 1fr;
     row-gap: 12rem;
   }
+  
 
   .contact-form {
     width: 100%;
@@ -691,6 +700,7 @@ span.profession .change {
   html {
     font-size: 42%;
   }
+
 
   .navbar {
     padding-inline: 2rem;
