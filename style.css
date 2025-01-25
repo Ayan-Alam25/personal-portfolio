@@ -617,6 +617,7 @@ span.profession .change {
     flex-direction: column;
     row-gap: 2rem;
     height: fit-content;
+    margin-left: 2rem;
   }
 
   .section-dots {
