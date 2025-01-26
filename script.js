@@ -24,7 +24,7 @@ pages.forEach((page) => {
 
 // Landing heading text change
 const heading = document.querySelector(".profession span");
-const headingTextArr = ["a Front End", "a Back End", "a Full Stack"];
+const headingTextArr = ["a Front End", "a Back End", "a Full Stack", "a Web Designer"];
 let i = 0;
 
 setInterval(() => {
@@ -34,8 +34,8 @@ setInterval(() => {
     heading.classList.remove("change");
   }, 300);
   i++;
-  i === 3 && (i = 0);
-}, 5000);
+  i === 4 && (i = 0);
+}, 4000);
 // end of Landing heading text change
 
 // My story text show & hide
