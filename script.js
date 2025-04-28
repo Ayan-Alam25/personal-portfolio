@@ -24,7 +24,7 @@ pages.forEach((page) => {
 
 // Landing heading text change
 const heading = document.querySelector(".profession span");
-const headingTextArr = ["a Front End", "a Back End", "a Full Stack", "a Web Designer"];
+const headingTextArr = ["a Frontend", "a Backend", "a Full-Stack", "a UI/UX"];
 let i = 0;
 
 setInterval(() => {
@@ -64,9 +64,9 @@ themeIcon.addEventListener("click", (e) => {
 // End of Theme change
 
 // Loader
-const loader = document.querySelector(".loader");
+// const loader = document.querySelector(".loader");
 
-window.addEventListener("load", () => {
-  loader.style.animation = "loaderAnim 2s linear forwards";
-});
+// window.addEventListener("load", () => {
+//   loader.style.animation = "loaderAnim 2s linear forwards";
+// });
 // End of Loader

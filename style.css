@@ -32,7 +32,7 @@ body.light {
 }
 
 /* Loader */
-.loader {
+/* .loader {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -58,7 +58,7 @@ body.light {
 
 .loader img {
   width: 10rem;
-}
+} */
 /* End of Loader */
 
 /* Navbar */
@@ -224,7 +224,7 @@ span.profession {
 span.profession span {
   font-weight: 600;
   display: inline-block;
-  width: 38rem;
+  width: 42rem;
   margin-left: 1.5rem;
   transform-origin: left;
   transition: transform 0.3s ease-out;
