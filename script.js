@@ -70,3 +70,19 @@ themeIcon.addEventListener("click", (e) => {
 //   loader.style.animation = "loaderAnim 2s linear forwards";
 // });
 // End of Loader
+
+document.querySelector(".contact-form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(e.target.action, {
+    method: "POST",
+    body: new FormData(e.target),
+    headers: { Accept: "application/json" },
+  })
+    .then(() => {
+      alert("Message sent successfully!");
+      e.target.reset();
+    })
+    .catch(() => {
+      alert("Error sending message. Please try again.");
+    });
+});
