@@ -148,7 +148,10 @@ section {
   overflow-y: scroll;
   /* Mozilla Firefox */
   scrollbar-width: thin;
-  scrollbar-color: var(--secondary-color);
+  /* Firefox */
+  scrollbar-color: var(--secondary-color) var(--primary-bg-color);
+  /* Chrome */
+
 }
 
 .my-story::-webkit-scrollbar,
@@ -348,7 +351,7 @@ span.profession .change {
   margin-top: 220px;
   margin-bottom: 100px;
 }
-
+/* Section 2 - Skills */
 .skills {
   width: 110rem;
   display: grid;
@@ -365,6 +368,8 @@ span.profession .change {
   box-shadow: 0 0 0.3rem #555;
   position: relative;
   transition: box-shadow 0.4s;
+  display: flex; /* Added to ensure consistent card height */
+  flex-direction: column; /* Align content vertically */
 }
 
 .skill img {
@@ -390,10 +395,28 @@ span.profession .change {
 }
 
 .desc {
-  height: 11rem;
+  max-height: 11rem; /* Replaced height with max-height */
   color: var(--secondary-color);
   font-size: 1.7rem;
   font-weight: 300;
+  overflow-y: auto; /* Changed to auto to show scrollbar only when needed */
+  line-height: 1.3;
+  flex-grow: 1; /* Ensure description fills available space */
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary-color) var(--secondary-bg-color);
+}
+
+.desc::-webkit-scrollbar {
+  width: 0.4rem; /* Slightly wider for better visibility */
+}
+
+.desc::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 0.2rem;
+}
+
+.desc::-webkit-scrollbar-track {
+  background-color: var(--secondary-bg-color);
 }
 
 .projects {
@@ -425,8 +448,6 @@ span.profession .change {
 .skill:hover .projects.bottom {
   top: 100%;
 }
-
-
 
 .projects-heading {
   font-size: 2.3rem;
